@@ -9,7 +9,6 @@ import Lighting from "../sceneComponents/setup/Lighting.js"
 import Booth from "../sceneComponents/Booth.js"
 import TestBooth from "../sceneComponents/TestBooth.js"
 import City from "../sceneComponents/City.js"
-import City2 from "../sceneComponents/City2.js"
 
 //booth people
 import BizWomanAsian2Large from "../sceneComponents/boothPeople/BizWomanAsian2Large.js"
@@ -33,7 +32,6 @@ export default function Scene({ ...props }) {
                 {/* <Booth /> */}
                 {/* <TestBooth /> */}
                 <City />
-                {/* <City2 /> */}
                 
                 {/* <BizWomanAsian2Large />
                 <BizWomanBlack  />

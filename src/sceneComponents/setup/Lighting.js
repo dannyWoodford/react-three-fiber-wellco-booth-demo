@@ -11,21 +11,21 @@ export default function Lighting(props) {
         <>
             <pointLight ref={reflight1} 
                     intensity={1.2} 
-                    position={[-16, 10, 5]} 
+                    position={[-36, 100, 51]} 
             />
                 {light && <pointLightHelper args={[light, 1]}
             />}
 
             <pointLight ref={reflight2} 
                     intensity={0.8} 
-                    position={[16, 10, 15]} 
+                    position={[-30, 100, -65]} 
             />
-                {light2 && <pointLightHelper args={[light2, 1]}
+                {light2 && <pointLightHelper  color="red" args={[light2, 1]}
             />}
 
             <pointLight ref={reflight3} 
                     intensity={0.8} 
-                    position={[16, 10, -5]} 
+                    position={[36, 100, -15]} 
             />
                 {light3 && <pointLightHelper args={[light3, 1]}
             />}

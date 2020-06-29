@@ -22,9 +22,12 @@ export default function TestBooth(props) {
     }
     return () => animations.forEach((clip) => mixer.uncacheClip(clip))
   }, [])
+
+  console.log(nodes)
+
   return (
     <group ref={group} {...props} dispose={null}>
-      <primitive object={nodes.Light} />
+      {/* <primitive object={nodes.Light} /> */}
       <group position={[21.95, 17.05, -3.67]} rotation={[Math.PI / 2, -1.01, 0]} scale={[0.04, 0.04, 0.04]}>
         <primitive object={nodes.mixamorigHips} />
         <skinnedMesh material={materials.Bodymat} geometry={nodes.Body.geometry} skeleton={nodes.Body.skeleton} />
@@ -42,7 +45,7 @@ export default function TestBooth(props) {
         <skinnedMesh material={materials.Shoesmat} geometry={nodes.Shoes.geometry} skeleton={nodes.Shoes.skeleton} />
         <skinnedMesh material={materials.Topmat} geometry={nodes.Tops.geometry} skeleton={nodes.Tops.skeleton} />
       </group>
-      <primitive object={nodes.Point} />
+      {/* <primitive object={nodes.Point} /> */}
       <primitive object={nodes.Main} />
       <primitive object={nodes.Camera_6} />
       <primitive object={nodes.Camera_1} />
